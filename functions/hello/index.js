@@ -4,7 +4,8 @@ export async function onRequest(context){
         env,
         params,
     } = context;
-    console.log({"req": request, "env": env, "params": params})
+    
+    const msg = "** Hello, World **";
 
-    return new Response("Hello World!");
+    return new Response(msg);
 }
