@@ -5,7 +5,7 @@ export async function onRequest(context){
         params,
     } = context;
     
-    const msg = "** Hello, World **";
+    const msg = {"req": request, "env": env, "params": params, "test": true}
 
     return new Response(msg);
 }
