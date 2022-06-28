@@ -7,5 +7,5 @@ export async function onRequest(context){
     
     const msg = {"req": request, "env": env, "params": params, "test": true}
 
-    return new Response(msg);
+    return new Response(JSON.stringify(msg));
 }
